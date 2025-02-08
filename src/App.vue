@@ -1,10 +1,22 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <BarraMenu/>
+  
   <router-view/>
 </template>
+
+<script>
+import BarraMenu from './components/BarraMenu.vue';
+
+export default {
+  name: 'App',
+  components:{
+    BarraMenu
+  }
+}
+
+</script>
+
+
 
 <style>
 #app {
