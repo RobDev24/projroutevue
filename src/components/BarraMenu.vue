@@ -12,6 +12,11 @@
     <router-link class="l-cadastro" to="/cadastro">Cadastre-se</router-link> 
     <router-link class="l-login" to="/Login">Login</router-link>
   </nav>
+  <div class="search">
+    <textarea name="" id=""></textarea>
+    <button>Pesquisar</button>
+  </div>
+  
     </div>
 </template>
 
@@ -23,16 +28,28 @@
 
 <style scoped>
 .navbar{
-    
+    display: inline-block;
     width: 100%;
     background-color: black;
     
 }
+
 .menu{
+    width: 40%;
+    margin-left: 10px;
+    margin-top: 12px;
+    margin-bottom: -35px;
+    padding: 5px;
     
-    display: inline-block;
-    padding:  15px;
-    margin-left: -400px;
+}
+
+.search{
+    border: 1px solid red;
+    width: 30%;
+    height: 45px;
+    float: right;
+    margin-top: -3px;
+    margin-right: 50px;
     
 }
 
@@ -47,10 +64,10 @@
    color: aliceblue; 
    text-decoration: none;
    padding: 8px;
-   margin-right: 20px;
+   margin-left: -80px;
 }
 .l-home:hover{
-    background-color: aquamarine;
+    background-color:#ffff;
     color:black;
     border-radius: 15px;
 }
@@ -91,12 +108,14 @@
    color: aliceblue; 
    text-decoration: none;
    padding: 8px;
+   margin-right: -220px;
 }
 .l-contato:hover{
     background-color: aquamarine;
     color:black;
     border-radius: 15px;
 }
+
 .l-cadastro{
    color: aliceblue; 
    text-decoration: none;
