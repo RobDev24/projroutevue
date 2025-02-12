@@ -13,7 +13,7 @@
     <router-link class="l-login" to="/Login">Login</router-link>
   </nav>
   <div class="search">
-    <textarea name="" id=""></textarea>
+    <input type="text" placeholder="Pesquisar">
     <button>Pesquisar</button>
   </div>
   
@@ -31,12 +31,15 @@
     display: inline-block;
     width: 100%;
     background-color: black;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
     
 }
 
 .menu{
     width: 40%;
-    margin-left: 10px;
+    margin-left: 109px;
     margin-top: 12px;
     margin-bottom: -35px;
     padding: 5px;
@@ -44,12 +47,12 @@
 }
 
 .search{
-    border: 1px solid red;
     width: 30%;
-    height: 45px;
+    height: 15px;
     float: right;
     margin-top: -3px;
-    margin-right: 50px;
+    margin-right: 30px;
+    padding: 15px 0px 15px 10px;
     
 }
 
@@ -65,6 +68,7 @@
    text-decoration: none;
    padding: 8px;
    margin-left: -80px;
+   margin-right: 20px;
 }
 .l-home:hover{
     background-color:#ffff;
@@ -108,7 +112,7 @@
    color: aliceblue; 
    text-decoration: none;
    padding: 8px;
-   margin-right: -220px;
+   margin-right: -0px;
 }
 .l-contato:hover{
     background-color: aquamarine;
@@ -137,5 +141,29 @@
     background-color: aquamarine;
     color:black;
     border-radius: 15px;
+}
+
+button{
+    background-color: black;
+    border: none;
+    color: #fff;
+    font:italic;
+    font-size: 18px;
+    padding: 8px;
+    margin-top: -10px;
+}
+input{
+    background-color:snow;
+    padding: 5px;
+    margin-top: -5px;
+    margin-left: 100px;
+    border-radius: 12px;
+    
+}
+button:hover{
+    border-radius: 15px;
+    padding: 5px;
+    background-color: aquamarine;
+    cursor: pointer;
 }
 </style>
